@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #111111;
+  --color-secondary: #000000;
+}
+
+/* GLOBAL ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+body {
+  margin-top: 31px;
+}
+
+/* HEADER ============ */
+header {
+  display: flex;
+  align-items: center;
+}
+
+#image-logo {
+  width: 94px;
+  height: 32px;
+  margin-right: 120px;
+}
+
+#links-menu a {
+  margin-right: 30px;
+  text-decoration: none;
+  line-height: 19px;
+}
+
+/* CHEFF BOX ============ */
+#box {
+  display: flex;
+  margin-top: 30px;
+
+  width: 940px;
+  height: 366px;
+
+  background: #FBDFDB;
+  border-radius: 30px;
+}
+
+#box h3 {
+  position: relative;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+
+  width: 305px;
+  height: 38px;
+
+  top: 117px;
+  left: 60px;
+}
+
+#box p {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-secondary);
+  opacity: 0.7;
+
+  width: 316px;
+  height: 84px;
+
+  top: 165px;
+  right: 248px;
+}
+
+#cheff-image {
+  position: relative;
+  top: 66px;
+}
+
+/* MAIN ============ */
+
+main h3 {
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+
+/* CARDS ============ */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card__image img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+  margin: 20px 20px 20px 0;
+}
+
+.card__image img:hover {
+  cursor: pointer;
+}
+
+.card__title h2 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.card__title h2:hover {
+  cursor: pointer;
+}
+
+.card__author h3 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #777777;
+  margin-top: 5px;
+}
+
+/* MODAL ============ */
+.modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  width: 660px;
+  height: 413px;
+  margin: auto;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.modal .modal-image img {
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 30px 30px 20px;
+}
+
+.modal .modal-title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.modal .modal-author h3 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #777777;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.modal .close-modal p {
+  color: #999999;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.modal .close-modal p:hover {
+  cursor: pointer;
+}
+
+/* MODAL-ACTIVE ============ */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* FOOTER ============ */
+#footer {
+  display: flex;
+  position: block;
+  bottom: 0;
+  background: #EEEEEE;
+  width: 100%;
+  height: 62px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer p {
+  position: relative;
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+} 
